@@ -56,12 +56,13 @@ counter 함수는 리턴값으로 함수를 반환한다.
 
 
 사실 
+
 ```JS
 let a = counter()
 let b = counter()
 ```
-부분에서 counter이라는게 생성자처럼 쓰인다고 볼 수 있다는 점에서 행동을 유추할 수 있다.
 
+부분에서 counter이라는게 생성자처럼 쓰인다고 볼 수 있다는 점에서 행동을 유추할 수 있다.
 
 ----------
 
@@ -88,9 +89,9 @@ someone.getName() // --> Tim
 
 이와 같이 private 필드에 있는 생성자처럼 사용이 가능하다.
 
-*someone*의 _name은 *someone*의 객체 필드에 새로운 *_name*을 말하는 것이라 클로저 내에 정의된 var name과 다른 메모리 주소를 가르킨다.
+*someone*의 `_name`은 *someone*의 객체 필드에 새로운 `_name`을 말하는 것이라 클로저 내에 정의된 `var name`과 다른 메모리 주소를 가르킨다.
 
-**getName이 가르키는 _name** : function man의 필드에 있었던 _name
+**getName이 가르키는** `_name` : function man의 필드에 있었던 _name
 
-**someone._name이 가르키는 _name** : someone 인스턴스 필드에서의 **위와 다른** _name
+**someone._name이 가르키는 **`_name` : someone 인스턴스 필드에서의 **위와 다른** `_name`
 
